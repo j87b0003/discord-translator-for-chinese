@@ -1,0 +1,28 @@
+{
+  "name": "discord-translator-for-chinese",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j87b0003/discord-translator-for-chinese.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j87b0003/discord-translator-for-chinese/issues"
+  },
+  "homepage": "https://github.com/j87b0003/discord-translator-for-chinese#readme",
+  "dependencies": {
+    "@discordjs/opus": "github:discordjs/opus",
+    "@discordjs/voice": "^0.11.0",
+    "discord-speech-to-text": "^1.1.5",
+    "discord.js": "^13.9.2",
+    "dotenv": "^16.0.1",
+    "node-witai-speech": "^1.0.2",
+    "nodemon": "^2.0.19"
+  }
+}
