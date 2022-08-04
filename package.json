@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/j87b0003/discord-translator-for-chinese/issues"
   },
+  "engines": {
+    "node": "16.1.0"
+  },
   "homepage": "https://github.com/j87b0003/discord-translator-for-chinese#readme",
   "dependencies": {
     "@discordjs/opus": "github:discordjs/opus",
