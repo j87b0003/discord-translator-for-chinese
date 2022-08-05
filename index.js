@@ -29,7 +29,6 @@ client.on('message', async (msg) => {
           selfMute: false
         })
 
-
         voiceConnection.receiver.speaking.on("start", (userId) => {
           let temp = ''
           transcriber.listen(voiceConnection.receiver, userId, client.users.cache.get(userId)).then((data) => {
@@ -39,7 +38,8 @@ client.on('message', async (msg) => {
 
             if (temp !== text) {
               temp = text
-              msg.channel.send(`\`\`\`diff\n ${user.username}\n ${text}\n\`\`\``)
+              msg.guild.channels.cache.get('1004813343963500554').send(`\`\`\`diff\n ${user.username}\n ${text}\n\`\`\``)
+              //msg.channel.send(`\`\`\`diff\n ${user.username}\n ${text}\n\`\`\``)
             }
           });
         });
@@ -61,4 +61,4 @@ http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});
   res.write('Discord Bot!');
   res.end();
-}).listen(8080);
+}).listen(80);
